@@ -11,7 +11,7 @@ const Lesson = () => {
 
     console.log(studies, study);
 
-    const thisStudy = studies.filter((item: any) => item.name === study)[0];
+    const thisStudy = studies.filter((item: any) => (item.name === study))[0];
 
     const componentPath = thisStudy.path;
     const Component = React.lazy(() => import(componentPath));

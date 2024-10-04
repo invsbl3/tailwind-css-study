@@ -8,7 +8,7 @@ import Lesson from './Lesson/Lesson';
 function App() {
 
   return (
-    <Router>
+    <Router basename='tailwind-css-study'>
       <div className='flex justify-center text-2xl m-2 border-b-4 border-blue-400'>Hello Wod</div>
       <Routes>
         <Route path='/' element={<Main />} />

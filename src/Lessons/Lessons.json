@@ -1,0 +1,10 @@
+[
+    {
+        "name":"display-flex-grid",
+        "component": "DisplayFlex"
+    },
+    {
+      "name":"other-lesson",
+      "component": "OtherLesson"
+    }
+]

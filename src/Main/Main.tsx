@@ -1,22 +1,22 @@
-import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { Context } from '../ContextProvider/ContextProvider';
+
+
 
 const Main = () => {
 
-    const studies = ['display-flex-grid', 'other-study-in-near-future'];
-
+    const { studies } = useContext(Context)
 
 
     return (<>
         <div>
-            Main Peige
+            Main Peige with All the Studies:
         </div>
-        <div className="h-100 w-[50%] m-10 bg-red-500 grid">
+        <div className="w-[100%] pt-4 pb-4 pl-2 bg-red-500 grid">
             {studies.map((study, index) => (
-                <Link to={study} key={index}>
-                    <div className="w-40 m-2 p-2 text-center content-center bg-green-400">
-                        {study}
-                    </div>
+                <Link to={study.name} key={index} >
+                        <button>{study.name}</button>
                 </Link>
             ))}
         </div>

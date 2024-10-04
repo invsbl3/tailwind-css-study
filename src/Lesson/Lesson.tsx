@@ -6,11 +6,12 @@ const Lesson = () => {
     const study = useParams().lesson;
     console.log(study);
 
-    const { studies } = useContext(Context);
+    const context: any = useContext(Context); 
+    const studies = context.studies;
 
     console.log(studies, study);
 
-    const thisStudy = studies.filter(item => item.name === study)[0];
+    const thisStudy = studies.filter((item: any) => item.name === study)[0];
 
     const componentPath = thisStudy.path;
     const Component = React.lazy(() => import(componentPath));

@@ -1,4 +1,3 @@
-import React from 'react';
 
 const body = `
             <div className="learn-box grid content-center">
@@ -42,12 +41,7 @@ const body = `
 
 const DisplayFlex = () => {
 
-    const populateData = async () => {
-
-
-    }
-
-
+    
     return (<div className='flex'>
 
         <div className="learn-section">

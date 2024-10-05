@@ -1,10 +1,15 @@
 const Lessons = [
-    {
-        "name":"display-flex-grid",
-        "component": "DisplayFle"
-    },
-    {
-      "name":"other-lesson",
-      component: "OtherLesson"
-    }
-]
+
+  {
+    name: 'display-flex-grid',
+    component: 'DisplayFlex'
+  },
+  {
+    name: 'other-lesson',
+    component: 'OtherLesson'
+  }
+];
+
+
+
+export default Lessons;

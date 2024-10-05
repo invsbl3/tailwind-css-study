@@ -1,4 +1,4 @@
-import {createContext} from 'react'
+import { createContext } from 'react'
 
 
 
@@ -8,18 +8,21 @@ export const Context = createContext({});
 const ContextProvider = (props: any) => {
 
   const studiess = [
-        
+
     {
-        name:'display-flex-grid',
-        component: 'DisplayFlex'
+      name: 'display-flex-grid',
+      component: 'DisplayFlex'
+    }, {
+      name: "layout-patterns",
+      component: "LayoutPatterns"
     },
     {
-      name:'other-lesson',
+      name: 'other-lesson',
       component: 'OtherLesson'
-  }
-        ];
+    }
+  ];
 
-  const studies = studiess.map(item=> ({...item, path: '../Lessons/'.concat(item.component, '/', item.component, '.tsx')}));
+  const studies = studiess.map(item => ({ ...item, path: '../Lessons/'.concat(item.component, '/', item.component, '.tsx') }));
 
   console.log(studies);
 

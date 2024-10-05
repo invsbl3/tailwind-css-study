@@ -20,3 +20,5 @@ I started with `parent-elements` with `flex` and `grid` styles with `buttons` as
 ## Layout Patterns
 - There's a simple layout pattern used in [Tailwind Documentation Page](https://tailwindcss.com/docs) that I replied in this mini-lesson trying to simplify and show dinamic code on screen.
 - This patterns consists in divide the content in 3 columns (left bar, content and documentation in the right), but in very-small screens just the two first colums appear stacked (the third one is hidden).
+
+- I'm learning a bit with [this video here](https://www.youtube.com/watch?v=rbSPe1tJowY)

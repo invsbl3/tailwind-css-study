@@ -19,6 +19,10 @@ const ContextProvider = (props: any) => {
     {
       name: 'other-lesson',
       component: 'OtherLesson'
+    },
+    {
+      name: "CSS in JS, line-code, external file and tailwind",
+      component: "CssLesson"
     }
   ];
 
